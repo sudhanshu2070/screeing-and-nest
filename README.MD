@@ -1,3 +1,5 @@
+## Screening QnA
+
 1. Describe a large-scale system you’ve worked on with Node.js. What architectural choices did you make and why?
 
 At Advantage AI Engineering, I worked on a large SaaS platform serving over 100,000 active users. We used a Node.js + TypeScript microservices architecture to ensure scalability and independent deployments. RESTful APIs and message queues helped keep communication efficient and reliable. The use of WebSockets enabled real-time updates, improving the user experience and reducing server load by offloading repeated polling.
