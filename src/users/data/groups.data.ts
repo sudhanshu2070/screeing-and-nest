@@ -1,0 +1,1 @@
+export const groups = ["GROUP_1", "GROUP_2"];
