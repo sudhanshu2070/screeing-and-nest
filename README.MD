@@ -58,7 +58,7 @@ I’m proud of scaling backend systems for apps serving over 100,000 users and d
 
 http://localhost:3000/users
 
-# Endpoints
+## Endpoints
 1. POST /users
 
 Create a new user (requires CREATE permission)
@@ -93,13 +93,14 @@ Example:
 
 GET /users/managed/5
 
-# Permissions Mapping
+## Permissions Mapping
 Permission	Endpoint
 CREATE	POST /users
 VIEW	GET /users
 EDIT	PATCH /users/:id
 DELETE	DELETE /users/:id
-# Authorization Header
+
+## Authorization Header
 
 Authorization is sent as:
 
@@ -115,8 +116,8 @@ User 1 is ADMIN → full permissions.
 
 User 6 is VIEWER → only VIEW allowed.
 
-# cURL Examples
-# Allowed (Admin user)
+## cURL Examples
+### Allowed (Admin user)
 curl --location --request POST 'http://localhost:3000/users' \
 --header 'Authorization: 1' \
 --header 'Content-Type: application/json' \
@@ -126,7 +127,7 @@ curl --location --request POST 'http://localhost:3000/users' \
     "groups": ["GROUP_1"]
 }'
 
-# Forbidden (Viewer user)
+## Forbidden (Viewer user)
 curl --location --request POST 'http://localhost:3000/users' \
 --header 'Authorization: 6' \
 --header 'Content-Type: application/json' \
@@ -136,7 +137,7 @@ curl --location --request POST 'http://localhost:3000/users' \
     "groups": ["GROUP_1"]
 }'
 
-# How to Run the Project
+## How to Run the Project
 1. Install dependencies
 npm install
 
